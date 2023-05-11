@@ -1,0 +1,18 @@
+create table Basic_details(ID_no varchar(20),ID_type varchar(20),Name varchar(20) not null,Age number(3) check(Age>0) not null,primary key(ID_no,ID_type));
+
+Create sequence SerialNo start with 1 increment by 1 minvalue 1 maxvalue 10000 nocycle;
+
+Create table Entry_Date(Serial_No number(10) primary key,Id_no varchar(20) ,Id_type varchar(20),Entry_date varchar(30),foreign key (Id_no,Id_type) references Basic_details);
+
+
+Create table Entry_Time(Sr_no number(10) references Entry_Date unique, Entry_time varchar(15));
+To add time fire(insert into Timer values(1,(select to_char(sysdate,'HH24-MI-SS am')from dual)););
+
+
+
+Create table Exit_Date(Sr_no number(10) references Entry_Date unique, Exit_date varchar(30));
+
+Create table Exit_Time(Sr_no number(10) references Entry_Date unique, Exit_time varchar(15));
+
+
+Create table Display(serial_No number(10) references Entry_date primary key,Id_no varchar(20),Id_type varchar(20),Name varchar(20),age number(3),entry_date varchar(30),exit_date varchar(30));

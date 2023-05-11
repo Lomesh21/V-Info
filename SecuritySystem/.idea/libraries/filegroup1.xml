@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="filegroup1">
+    <CLASSES>
+      <root url="file://D:/oracle/Oracle11g/database/stage/Components/oracle.dbjava.jdbc/11.2.0.1.0/1/DataFiles/filegroup1" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://D:/oracle/Oracle11g/database/stage/Components/oracle.dbjava.jdbc/11.2.0.1.0/1/DataFiles/filegroup1" recursive="false" />
+  </library>
+</component>
