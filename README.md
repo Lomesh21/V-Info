@@ -1,4 +1,4 @@
-# V-Info \
+# V-Info 
 ![bgimage2 (2)](https://github.com/SarveshChavan/V-Info/assets/103113615/f13828b7-ac63-4e5e-b49a-5b51b7199cca)
 
 A JavaFX Desktop application with an Oracle database to store visitor information.This will enable organizations to analyze trends and proactively manage visitor burdens.
